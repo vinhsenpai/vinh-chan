@@ -1,0 +1,28 @@
+
+.img-style{
+    width:400px;
+    height:300px;
+}
+.text-bold{
+    font-weight:bold;
+    font-size:200%;
+}
+.product-div{
+    border: solid black;
+    width: 400px; 
+}
+.product-abba{
+    text-align:left;
+    background:red;
+    position: fixed;
+    width:100%;
+    margin-bottom:50px;
+    top:0px;
+}
+.logo{
+    width:50px;
+    height:40px;
+}
+body{
+    color:#555;
+}
