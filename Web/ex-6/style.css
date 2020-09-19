@@ -1,28 +1,39 @@
 
 .img-style{
-    width:400px;
-    height:300px;
+    width:430px;
+    height:550px;
 }
 .text-bold{
     font-weight:bold;
-    font-size:200%;
+    font-size:300%;
 }
 .product-div{
     border: solid black;
-    width: 400px; 
+    width: 430px;
+    background-color:white; 
 }
 .product-abba{
-    text-align:left;
+    display: flex;
     background:red;
-    position: fixed;
-    width:100%;
-    margin-bottom:50px;
-    top:0px;
+    padding: 10px;
+    top: 0px;
 }
 .logo{
-    width:50px;
-    height:40px;
+    width:40px;
+    height:30px;
 }
 body{
     color:#555;
 }
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.footer-container{
+    display: flex;
+    justify-content: center;
+    background-color: lightgrey;
+    padding:0px 50px; 
+}
+
