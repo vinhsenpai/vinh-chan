@@ -17,6 +17,8 @@
     background:red;
     padding: 10px;
     top: 0px;
+    position: fixed;
+    width: 100%;
 }
 .logo{
     width:40px;
@@ -35,5 +37,46 @@ body{
     justify-content: center;
     background-color: lightgrey;
     padding:0px 50px; 
+}
+.product-info{border:solid white ;
+    width: 430px;
+    background-color:white;}
+.product-display{
+    width: 70%;
+    margin-right:60px;
+}
+.product-img{
+    width:900px;
+    height:1100px;
+}    
+.product-detail-container{
+    display: flex;
+    padding:0 5%;
+    margin:60px 0px;
+}
+.detail-display{
+    width: 30%;
+    padding-left:40px ;
+}
+.text-center{
+    text-align: center;
+}
+select{
+    width:120px;
+    height:30px;
+    font-size: 15px;
+    border-radius:5%;
+}
+button{
+    width: 150px;
+    background-color: lightblue;
+    border-radius:10% solid;
+    height:30px;
+}
+.menu-a{
+    margin:10px 0px;
+}
+.product-div a p:hover{
+    background-color:lightblue;
 }
 
