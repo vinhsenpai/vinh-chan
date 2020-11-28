@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="text">JavaScript Exercises - w3resource</p>
+    <button onclick="font()">Font</button>
+    <button onclick="fontsize()">Font size</button>
+    <button onclick="color()">Color</button>
+    <script>
+        let text= document.getElementById("text")
+        let font=function(){
+            text.style.fontFamily="cursive";
+        }
+        let fontsize=function(){
+            text.style.fontSize="200%";
+        }
+        let color=function(){
+            text.style.color="blue";
+        }
+    </script>
+</body>
+</html>
