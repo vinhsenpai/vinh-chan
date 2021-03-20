@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Hello</p>
+    <script>
+        alert("Xin chào các bạn")
+        //tạo đề bài
+        let keys=["javascript","monkey","amazing","popular"]
+
+
+        //lấy đề ngẫu nhiên
+        let randomword=keys[Math.floor(Math.random()*keys.length)]
+        console.log(randomword)
+
+        let answer= []
+        for(let i=0;i<randomword.length;i++){
+            answer[i]="_"
+        }
+        alert(answer)
+        let input=prompt("Xin hãy nhập một từ")
+        console.log(input)
+
+
+        for(let i=0;i < randomword.length;i++){
+            if(input=== randomword[i]){
+                console.log("đúng")
+            }else console.log("sai")
+
+        }
+    </script>
+</body>
+</html>

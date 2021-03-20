@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="display: flex;">
+        <div>
+            <img src="https://i.pinimg.com/736x/59/e5/7e/59e57ef8f2f9802c73dabb4631bc637c.jpg" alt="" width="700px" height="800px">
+        </div>
+        <div>
+            <h1 style="margin-left: 350px;font-size: 200%;">Create an account</h1>
+            <input id="email" type="email" placeholder="Email" style="width:350px;height:30px;margin-left:200px;">
+            <input id="password" type="password" placeholder="Password"  style="width:350px;height:30px;margin-left:200px;margin-top:30px;">
+            <input id="password1" type="password" placeholder="Password enter" style="width:350px;height:30px;margin-left:200px;margin-top:30px;">
+            <button onclick="login()" style="width:350px;height:30px;margin-left:200px;margin-top:30px;background-color:greenyellow">Create</button>
+            <p style="margin-left: 250px;">Already have account<a href="" style="color:Green;">Sign in</a></p>
+            <p id="checkcase" style="display: none;margin-left: 200px;">Create false,please try again</p>
+        </div>
+        
+    </div>
+    <script>
+
+        let login=function(){
+            let myemail1=document.getElementById("email").value;
+            let myps = document.getElementById("password").value;
+            let myps1 = document.getElementById("password1").value;
+            let check = document.getElementById("checkcase");
+
+            if( myps == myps1){
+                check.style.display = "block";
+                check.innerHTML="Create successfully";
+                check.style.color="green";
+            }
+            else{
+                check.style.display = "block";
+                check.style.color="red";
+            }
+            if(myemail1==""||myps1==""||myps==""){
+                console.log("Error");
+                check.style.color="red";
+                check.style.display="block";
+            }
+        }
+    </script>
+</body>
+</html>

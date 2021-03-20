@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="car"></p>
+    <p id="film"></p>
+    <script>
+         let car={
+             Name:"Lamborghini",
+             Sobanhxe:4,
+             Color:"blue",
+             Namlayve:"2030",
+             Price:"$789,809",
+         }
+         console.log(car);
+         console.log("xe của tôi được lấy về vào năm",car.Namlayve,"có màu",car.Color,"và có",car.Sobanhxe,"bánh")
+         let car1=JSON.stringify(car);
+         document.getElementById("car").innerHTML=car1;
+
+        let film=[
+            {Name:"Violet Evergarden the Movie",Producer:"Kyoto Animation",Year:2020},
+            {Name:"A silent Voice:The Movie",Producer:"Kyoto Animation",Year:2016},
+            {Name:"Weathering with you",Producer:"CoMix Wave Films Story Inc",Year:2019},
+        ]
+        console.log(film);
+        let film1=JSON.stringify(film);
+        document.getElementById("film").innerHTML=film1;
+    </script>
+</body>
+</html>

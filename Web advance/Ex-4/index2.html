@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        #width{
+            width: 500px;
+            height: 200px;
+        }
+        button{
+            width: 100%;
+            height: 100%;
+        }
+        input{
+            width: 99%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <table border=1 id="width">
+        <tr>
+            <th colspan="3"><input id="input"></input></th>
+            <th style="width:150px"><button>Clear</button></th>
+        </tr>
+        <tr id="button">
+            <th><button onclick="button(7)">7</button></th>
+            <th><button onclick="button(8)">8</button></th>
+            <th><button onclick="button(9)">9</button></th>
+            <th><button onclick="setOperator('/')">/</button></th>
+        </tr>
+        <tr>
+            <th><button onclick="button(4)">4</button></th>
+            <th><button onclick="button(5)">5</button></th>
+            <th><button onclick="button(6)">6</button></th>
+            <th><button onclick="setOperator('*')">*</button></th>
+        </tr>
+        <tr>
+            <th><button onclick="button(1)">1</button></th>
+            <th><button onclick="button(2)">2</button></th>
+            <th><button onclick="button(3)">3</button></th>
+            <th><button onclick="setOperator('-')">-</button></th>
+        </tr>
+        <tr> 
+            <th><button onclick="button(0)">0</button></th>
+            <th><button onclick="button('.')">.</button></th>
+            <th><button onclick="solve('=')">=</button></th>
+            <th><button onclick="setOperator('+')">+</button></th>
+        </tr>
+    </table>
+    <script>
+        let SoDauTien;
+        let ToanTu;
+        let SoThuHai;
+        function button(n){
+            let value=document.getElementById("input");
+            if (value.value=="+" || value.value== "-" || value.value=="*"|| value.value=="/"){
+                value.value="";
+            }
+
+            value.value+=n
+        }
+        let setOperator =function(n){
+            let value=document.getElementById("input");
+            SoDauTien =value.value;
+            value.value =n;
+            ToanTu =n
+        }
+        let solve =function(){
+            let value=document.getElementById("input");
+            SoThuHai=value.value;
+            let ketqua=0;
+            if (ToanTu== "+"){
+                ketqua= SoDauTien + SoThuHai;
+            }
+            if (ToanTu== "-"){
+                ketqua= SoDauTien - SoThuHai;
+            }
+            if (ToanTu== "*"){
+                ketqua= SoDauTien * SoThuHai;
+            }
+            if (ToanTu== "/"){
+                ketqua= SoDauTien / SoThuHai;
+            }
+            value.value=ketqua;
+        }
+    </script>
+
+   <!-- <script>
+       Số đầu tiên + Toán tử +Số thứ 2 =kết quả
+       let SoDauTien
+       let ToanTu
+       let SoThuHai
+
+       khi nhấn số n
+       Kiểm tra thông tin đang nhập có là toán tử không nếu là toán tử thì xóa nội dung và lưu vào biến
+       Lấy số đang hiện
+       Sửa thông tin đang hiện thành số n và cuối đoạn thông tin đang hiện ra
+       Tương tự vs các số từ 1 đến 9
+
+       Hàm phép tính
+       Lưu số hiện tại vào biến SoDauTien
+       Xóa số đang hiện
+       Lưu toán từ vào biến ToanTu
+
+       Hàm kết quả
+       Lưu thông tin vào biến SoThuHai
+       Tạo biến lưu trữ kết quả
+       Kiểm tra toán tử
+       Nếu toán tử =="+" thực hiện phép cộng
+       ketqua= SoDauTien + SoThuHai
+
+       Tương tự vs các phép tính còn lại
+   </script> -->
+</body>
+</html>
