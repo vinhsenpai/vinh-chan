@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script>
+
         let a=[];
         console.log(a==true) //false vì bên trong chuỗi không có ký tự nào
         console.log(a===true)//false vì khác kiểu dữ liệu
@@ -28,7 +19,6 @@
         let b1=[3,5];
         console.log(toString(a1)==toString(b1))
         console.log(toString(a1)===toString(b1))
-    </script>
 
-</body>
-</html>
+
+
