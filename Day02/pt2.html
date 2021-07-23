@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let pt2=function(a,b,c){
+            if(b*b-4*a*c>0){
+                return nghiem={
+                   nghiem1 : (-b + Math.sqrt(b*b-4*a*c))/(2*a),
+                   nghiem2 : (-b - Math.sqrt(b*b-4*a*c))/(2*a),
+                }
+            }
+            if(b*b-4*a*c==0){
+                return nghiem= -b/(2*a)
+            }
+            if(b*b-4*a*c<0){
+                return "vo nghiem"
+            }
+        }
+        const ketqua =pt2(1,4,3)
+        console.log(ketqua)
+    </script>
+</body>
+</html>
