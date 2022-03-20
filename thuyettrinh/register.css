@@ -1,0 +1,24 @@
+#valid-text{
+    display: none;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width:300px;
+    margin-left: 600px;
+}
+.form input{
+    min-width: 240px;
+    margin: 10px 20px;
+}
+.form button{
+    width: 100px;
+    margin-left:100px;
+    margin-top: 30px;
+}
+.dangky{
+    text-align: center;
+}
+.label{
+    margin: 0 20px;
+}
